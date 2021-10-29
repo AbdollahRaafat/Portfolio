@@ -3,12 +3,19 @@
   font-size: 18px;
 }
 
+body {
+  display: grid;
+  row-gap: 130px;
+  background-color: #f7f7f7;
+}
+
 /* Style The hole skeleton */
 
 .skeleton {
   height: 700px;
   border: 1px solid white;
-  border-radius: 0 0 0 50px;
+  border-radius: 0 0 0 75px;
+  background-color: white;
 }
 
 /* Style The header */
@@ -90,9 +97,9 @@ ul {
 /* Style the Works section */
 
 .grid-container {
-  display: grid;
   background-color: #f7f7f7;
-  row-gap: 200px;
+  display: grid;
+  row-gap: 88px;
 }
 
 .pro-img {
@@ -198,9 +205,9 @@ ul {
 /* style About-me section */
 .about {
   background-color: white;
-  border: 1px solid white;
   border-radius: 0 115px 0 0;
   margin-left: 24px;
+  padding-left: 24px;
 }
 
 .me {
@@ -208,10 +215,11 @@ ul {
   font-weight: bolder;
   color: #172b4d;
   height: 101px;
+  padding-top: 100px;
 }
 
 .here {
-  margin-bottom: 10px;
+  margin: 10px 24px 0 0;
 }
 
 .container {
@@ -262,15 +270,11 @@ ul {
   justify-content: space-between;
   padding-right: 50px;
   padding-bottom: 20px;
-}
-
-.arrow-1 {
-  margin-top: 35px;
+  align-items: baseline;
 }
 
 .js-icon {
   display: flex;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 150px;
   background-color: #f7f7f9;
@@ -280,17 +284,16 @@ ul {
   font-size: 15px;
 }
 
-.js-i {
-  padding-top: 6px;
-}
-
-.js-name {
-  padding-top: 25px;
+.js-i{
+  margin-top: 7px;
+  margin-right: 7%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 
 .html-icon {
   display: flex;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 185px;
   background-color: #f7f7f9;
@@ -301,17 +304,16 @@ ul {
   margin-top: 12px;
 }
 
-.html-i {
-  padding-top: 6px;
-}
-
-.html-name {
-  padding-top: 25px;
+.html-i{
+  margin-top: 7px;
+  margin-right: 7%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 
 .css-icon {
   display: flex;
-  justify-content: space-between;
   padding-left: 25px;
   padding-right: 195px;
   background-color: #f7f7f9;
@@ -322,12 +324,12 @@ ul {
   margin-top: 12px;
 }
 
-.css-i {
-  padding-top: 6px;
-}
-
-.css-name {
-  padding-top: 25px;
+.css-i{
+  margin-top: 7px;
+  margin-right: 7%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 
 .Separator {
@@ -342,6 +344,8 @@ ul {
   display: flex;
   justify-content: space-between;
   padding-right: 50px;
+  align-items: baseline;
+  height: 60px;
 }
 
 .skills {
@@ -349,4 +353,6 @@ ul {
   display: flex;
   justify-content: space-between;
   padding-right: 50px;
+  align-items: baseline;
+  height: 60px;
 }

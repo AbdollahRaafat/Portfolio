@@ -3,6 +3,21 @@
   font-size: 18px;
 }
 
+body {
+  display: grid;
+  row-gap: 130px;
+  background-color: #f7f7f7;
+}
+
+/* Style The hole skeleton */
+
+.skeleton {
+  height: 700px;
+  border: 1px solid white;
+  border-radius: 0 0 0 75px;
+  background-color: white;
+}
+
 /* Style The header */
 
 nav {
@@ -77,4 +92,267 @@ ul {
   float: left;
   margin-right: 26px;
   color: #505f79;
+}
+
+/* Style the Works section */
+
+.grid-container {
+  background-color: #f7f7f7;
+  display: grid;
+  row-gap: 88px;
+}
+
+.pro-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img {
+  border-radius: 8px;
+  margin: 16px;
+}
+
+.card {
+  border-radius: 16px;
+  margin: 24px;
+  background-color: white;
+}
+
+.project-name {
+  font-size: 32px;
+  color: #172b4d;
+  margin: 0 30px 0 0;
+}
+
+.details {
+  font-size: 13px;
+  color: #344563;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 50px;
+  margin-right: 60px;
+  font-size: 13px;
+}
+
+.descrip {
+  font-size: 15px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #c1c7d0;
+}
+
+.stack {
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.use {
+  border-radius: 8px;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  color: #6070ff;
+  font-size: 12px;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+
+.part2 {
+  margin-left: 16px;
+}
+
+.see-project {
+  height: 48px;
+  width: 124px;
+  border: 2px solid #396df2;
+  font-size: 17px;
+  margin: 30px 0 15px 0;
+  border-radius: 8px;
+  color: #396df2;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.see-project:hover {
+  background-color: #91b0ff;
+  color: white;
+  border: none;
+}
+
+.see-project:active {
+  background-color: #1d5cfa;
+  color: white;
+}
+
+.see-project:disabled {
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+
+/* style About-me section */
+.about {
+  background-color: white;
+  border-radius: 0 115px 0 0;
+  margin-left: 24px;
+  padding-left: 24px;
+}
+
+.me {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #172b4d;
+  height: 101px;
+  padding-top: 100px;
+}
+
+.here {
+  margin: 10px 24px 0 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.see-resume {
+  display: flex;
+  height: 48px;
+  width: 162px;
+  border: 2px solid #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 8px;
+  color: #6070ff;
+  background-color: white;
+  padding: 10px 0 0 15px;
+  margin-top: 10px;
+}
+
+.see-resume:hover {
+  background-color: #91b0ff;
+  color: white;
+  border: none;
+}
+
+.see-resume:active {
+  background-color: #1d5cfa;
+  color: white;
+}
+
+.see-resume:disabled {
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+
+.one {
+  font-size: 20px;
+}
+
+.lang {
+  margin-top: 60px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  align-items: baseline;
+}
+
+.js-icon {
+  display: flex;
+  padding-left: 25px;
+  padding-right: 150px;
+  background-color: #f7f7f9;
+  margin-right: 36px;
+  height: 66.5px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.js-i {
+  margin-top: 7px;
+  margin-right: 7%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.html-icon {
+  display: flex;
+  padding-left: 25px;
+  padding-right: 185px;
+  background-color: #f7f7f9;
+  margin-right: 36px;
+  height: 66.5px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.html-i {
+  margin-top: 7px;
+  margin-right: 7%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.css-icon {
+  display: flex;
+  padding-left: 25px;
+  padding-right: 195px;
+  background-color: #f7f7f9;
+  margin-right: 36px;
+  height: 66.5px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.css-i {
+  margin-top: 7px;
+  margin-right: 7%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.Separator {
+  width: 327px;
+  height: 2px;
+  padding-bottom: 30px;
+}
+
+.Frameworks {
+  margin-top: 30px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  align-items: baseline;
+  height: 60px;
+}
+
+.skills {
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  align-items: baseline;
+  height: 60px;
 }

@@ -5,7 +5,7 @@
 
 body {
   display: grid;
-  row-gap: 130px;
+  width: 100%;
   background-color: #f7f7f7;
 }
 
@@ -16,6 +16,7 @@ body {
   border: 1px solid white;
   border-radius: 0 0 0 75px;
   background-color: white;
+  margin-bottom: 50px;
 }
 
 /* Style The header */
@@ -206,8 +207,9 @@ ul {
 .about {
   background-color: white;
   border-radius: 0 115px 0 0;
-  margin-left: 24px;
+  margin-top: 100px;
   padding-left: 24px;
+  padding-bottom: 100px;
 }
 
 .me {
@@ -355,4 +357,76 @@ ul {
   padding-right: 50px;
   align-items: baseline;
   height: 60px;
+}
+
+/* Style the footer part */
+
+.footer-part {
+  background-color: #6070ff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 60px 0 0 0;
+}
+
+.contact-me {
+  font-size: 40px;
+  margin: 104px 0 12px 0;
+  text-align: center;
+}
+
+.call-me {
+  display: flex;
+  margin: 0 24px 35px 24px;
+  text-align: center;
+}
+
+.nem {
+  margin: 0 0 20px 5%;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  width: 85%;
+  padding: 15px 0 0 15px;
+}
+
+#msg {
+  height: 150px;
+}
+
+.hint {
+  height: 48px;
+}
+
+.last-button {
+  height: 48px;
+  width: 124px;
+  border: none;
+  font-size: 17px;
+  margin: 0 0 15px 20px;
+  border-radius: 8px;
+  color: #396df2;
+  text-align: center;
+  background-color: white;
+}
+
+.last-button:hover {
+  background-color: #91b0ff;
+  color: white;
+  border: none;
+}
+
+.last-button:active {
+  background-color: #1d5cfa;
+  color: white;
+}
+
+.last-button:disabled {
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+
+.shape {
+  margin: 0 0 8px 38%;
 }

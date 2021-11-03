@@ -6,6 +6,7 @@
 body {
   display: grid;
   /*row-gap: 130px;*/
+  width: 100%;
   background-color: #f7f7f7;
 }
 
@@ -334,7 +335,7 @@ ul {
 }
 
 .Separator {
-  width: 327px;
+  /*width: 327px;*/
   height: 2px;
   padding-bottom: 30px;
 }

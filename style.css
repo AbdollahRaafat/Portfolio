@@ -209,8 +209,8 @@ ul {
   background-color: white;
   border-radius: 0 115px 0 0;
   margin-top: 100px;
-  padding-bottom: 100px;
   padding-left: 24px;
+  padding-bottom: 100px;
 }
 
 .me {
@@ -336,7 +336,7 @@ ul {
 }
 
 .Separator {
-  /*width: 327px;*/
+  width: 327px;
   height: 2px;
   padding-bottom: 30px;
 }
@@ -366,50 +366,50 @@ ul {
   background-color: #6070FF;
   color: white;
   display: flex;
-  border-radius: 60px 0 0 0;
   flex-direction: column;
+  border-radius: 60px 0 0 0;
+
 }
 
 .contact-me {
   font-size: 40px;
-  margin: 104px 15% 12px 15%;
-  justify-content: center;
+  margin: 104px 0 12px 0;
+  text-align: center;
   
 }
 
 .call-me {
   display: flex;
   margin: 0 24px 35px 24px;
-  align-items: center;
+  text-align: center;
 }
 
 .nem {
-  margin: 0 50% 20px 7%;
+  margin: 0 43% 20px 5%;
   border-radius: 8px;
-  border: 0 soild white;
+  border: none;
   font-size: 15px;
   width: 85%;
+  padding: 15px 0 0 15px;
+}
+
+#msg {
+  height: 150px;
 }
 
 .hint {
   height: 48px;
-  border: none;
-}
-
-#msg {
-  height: 170px;
 }
 
 .last-button {
   color: #6070FF;
   height: 48px;
   width: 124px;
-  border: 2px solid #396df2;
+  border: none;
   font-size: 17px;
-  margin: 30px 0 15px 0;
+  margin: 0 0 15px 20px;
   border-radius: 8px;
   color: #396df2;
-  align-items: center;
   text-align: center;
   background-color: white;
 
@@ -430,4 +430,8 @@ ul {
   background-color: white;
   color: gray;
   border: 1px solid gray;
+}
+
+.shape {
+  margin: 0 0 8px 38%;
 }

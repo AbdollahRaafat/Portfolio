@@ -5,7 +5,7 @@
 
 body {
   display: grid;
-  row-gap: 130px;
+  /*row-gap: 130px;*/
   background-color: #f7f7f7;
 }
 
@@ -16,6 +16,7 @@ body {
   border: 1px solid white;
   border-radius: 0 0 0 75px;
   background-color: white;
+  margin-bottom: 50px;
 }
 
 /* Style The header */
@@ -206,7 +207,7 @@ ul {
 .about {
   background-color: white;
   border-radius: 0 115px 0 0;
-  margin-left: 24px;
+  margin-top: 100px;
   padding-left: 24px;
 }
 
@@ -355,4 +356,40 @@ ul {
   padding-right: 50px;
   align-items: baseline;
   height: 60px;
+}
+
+/*Style the footer part*/
+
+.footer-part {
+  background-color: #6070FF;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me {
+  font-size: 40px;
+  margin: 104px 15% 12px 15%;
+  justify-content: center;
+  
+}
+
+.call-me {
+  display: flex;
+  margin: 0 24px 35px 24px;
+  align-items: center;
+}
+
+.nem {
+  margin: 0 50% 20px 7%;
+  border-radius: 8px;
+  border: 0 soild white;
+  font-size: 15px;
+  width: 85%;
+}
+
+#msg {
+  height: 170px;
+  
+  
 }

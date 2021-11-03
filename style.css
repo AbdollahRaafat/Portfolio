@@ -5,7 +5,6 @@
 
 body {
   display: grid;
-  /*row-gap: 130px;*/
   width: 100%;
   background-color: #f7f7f7;
 }
@@ -360,22 +359,20 @@ ul {
   height: 60px;
 }
 
-/*Style the footer part*/
+/* Style the footer part */
 
 .footer-part {
-  background-color: #6070FF;
+  background-color: #6070ff;
   color: white;
   display: flex;
   flex-direction: column;
   border-radius: 60px 0 0 0;
-
 }
 
 .contact-me {
   font-size: 40px;
   margin: 104px 0 12px 0;
   text-align: center;
-  
 }
 
 .call-me {
@@ -402,7 +399,6 @@ ul {
 }
 
 .last-button {
-  color: #6070FF;
   height: 48px;
   width: 124px;
   border: none;
@@ -412,7 +408,6 @@ ul {
   color: #396df2;
   text-align: center;
   background-color: white;
-
 }
 
 .last-button:hover {

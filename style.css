@@ -49,7 +49,7 @@ nav {
   border: none;
 }
 
-.nav-button{
+.nav-button {
   display: none;
 }
 
@@ -114,13 +114,11 @@ ul {
 .pro-img {
   display: flex;
   justify-content: space-around;
-  
 }
 
 .img {
   border-radius: 8px;
   margin: 20px;
- 
 }
 
 .card {
@@ -445,28 +443,29 @@ ul {
 /* Media Queries for Desktop Screen */
 
 @media only screen and (min-width: 700px) {
-  
-  /* style Skeleton section */ 
+  /* style Skeleton section */
+
   .skeleton {
     margin-top: 0;
     height: 80%;
   }
-  
+
   nav {
     display: flex;
-    justify-content: baseline;
     padding: 26px 10% 26px 150px;
   }
+
   .menu {
     display: none;
   }
+
   .my-logo {
     padding-right: 40%;
   }
 
   .nav-button {
     display: block;
-    Font-size: 15px;
+    font-size: 15px;
     border: none;
     background-color: white;
     color: #344563;
@@ -481,7 +480,7 @@ ul {
     display: flex;
     height: 1000px;
     background-size: contain;
-    margin:0;
+    margin: 0;
   }
 
   h1 {
@@ -493,14 +492,14 @@ ul {
     font-size: 20px;
   }
 
-  /* style woork cards section */ 
+  /* style woork cards section */
 
   .card {
     display: flex;
     width: 80%;
     margin-left: 10%;
     height: 500px;
-    border-radius: 24px; 
+    border-radius: 24px;
     justify-content: right;
   }
 
@@ -513,15 +512,12 @@ ul {
 
   .part2 {
     padding: 70px 23% 27px 22px;
-    
   }
 
-  /* style About me section */ 
+  /* style About me section */
 
   .about {
     display: flex;
-    justify-content: baseline;
-
   }
 
   .sec1 {
@@ -538,7 +534,6 @@ ul {
   .row {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     margin-right: 300px;
     justify-content: left;
   }
@@ -548,16 +543,16 @@ ul {
     flex-direction: column;
     height: 120px;
     margin: 0;
-    padding-right: 50px ;
+    padding-right: 50px;
     width: 30%;
   }
-  
+
   .html-icon {
     display: flex;
     flex-direction: column;
     height: 120px;
     margin: 0;
-    padding-right: 90px ;
+    padding-right: 90px;
     width: 10%;
   }
 
@@ -566,16 +561,16 @@ ul {
     flex-direction: column;
     height: 120px;
     margin: 0;
-    padding-right: 90px ;
+    padding-right: 90px;
     width: 10%;
   }
 
   /* Style footer-part */
-  
+
   .footer-part {
     display: flex;
     padding-bottom: 139px;
-    padding-top: 100px
+    padding-top: 100px;
   }
 
   .contact-form {
@@ -599,5 +594,4 @@ ul {
   .last-button {
     margin-left: 80%;
   }
-
 }

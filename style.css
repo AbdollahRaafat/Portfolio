@@ -442,7 +442,7 @@ ul {
 
 /* Media Queries for Desktop Screen */
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1000px) {
   /* style Skeleton section */
 
   .skeleton {
@@ -470,6 +470,7 @@ ul {
     background-color: white;
     color: #344563;
     padding-right: 0;
+    text-decoration: none;
   }
 
   .headline {
@@ -500,7 +501,6 @@ ul {
     margin-left: 10%;
     height: 500px;
     border-radius: 24px;
-    justify-content: right;
   }
 
   .img {
@@ -508,6 +508,11 @@ ul {
     width: 544px;
     height: 448px;
     border-radius: 8px;
+    order: 1;
+  }
+
+  .pro-img-2 {
+    order: 1;
   }
 
   .part2 {
@@ -523,19 +528,24 @@ ul {
   .sec1 {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
     padding: 0 2% 0 8%;
   }
 
   .sec2 {
-    width: 40%;
+    width: 60%;
+    margin-right: 10%;
+  }
+
+  .Separator {
+    width: 100%;
+    height: auto;
   }
 
   .row {
     display: flex;
     flex-direction: row;
     margin-right: 300px;
-    justify-content: left;
   }
 
   .js-icon {
@@ -592,6 +602,6 @@ ul {
   }
 
   .last-button {
-    margin-left: 80%;
+    margin-left: 115%;
   }
 }

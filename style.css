@@ -49,6 +49,14 @@ nav {
   border: none;
 }
 
+.nav-button {
+  display: none;
+}
+
+.large {
+  font-size: 150%;
+}
+
 /* Style The headline */
 
 .headline {
@@ -110,7 +118,7 @@ ul {
 
 .img {
   border-radius: 8px;
-  margin: 16px;
+  margin: 20px;
 }
 
 .card {
@@ -132,11 +140,13 @@ ul {
 
 .info {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   height: 50px;
-  margin-right: 60px;
   font-size: 13px;
+}
+
+.el {
+  margin-right: 2.5%;
 }
 
 .descrip {
@@ -165,8 +175,6 @@ ul {
 
 .tech {
   display: flex;
-  justify-content: space-between;
-  margin-right: 100px;
 }
 
 .part2 {
@@ -178,7 +186,7 @@ ul {
   width: 124px;
   border: 2px solid #396df2;
   font-size: 17px;
-  margin: 30px 0 15px 0;
+  margin: 50px 0 15px 0;
   border-radius: 8px;
   color: #396df2;
   align-items: center;
@@ -387,11 +395,12 @@ ul {
   border: none;
   font-size: 15px;
   width: 85%;
-  padding: 15px 0 0 15px;
+  padding: 0 0 0 15px;
 }
 
 #msg {
   height: 150px;
+  padding-top: 15px;
 }
 
 .hint {
@@ -403,7 +412,7 @@ ul {
   width: 124px;
   border: none;
   font-size: 17px;
-  margin: 0 0 15px 20px;
+  margin: 0 0 15px 5%;
   border-radius: 8px;
   color: #396df2;
   text-align: center;
@@ -429,4 +438,170 @@ ul {
 
 .shape {
   margin: 0 0 8px 38%;
+}
+
+/* Media Queries for Desktop Screen */
+
+@media only screen and (min-width: 1000px) {
+  /* style Skeleton section */
+
+  .skeleton {
+    margin-top: 0;
+    height: 80%;
+  }
+
+  nav {
+    display: flex;
+    padding: 26px 10% 26px 150px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .my-logo {
+    padding-right: 40%;
+  }
+
+  .nav-button {
+    display: block;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    color: #344563;
+    padding-right: 0;
+    text-decoration: none;
+  }
+
+  .headline {
+    background-image: url('images/Header bg@2x.png');
+    padding: 6% 20% 0 10%;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1000px;
+    background-size: contain;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    padding-top: 10%;
+  }
+
+  .whoAmI {
+    font-size: 20px;
+  }
+
+  /* style woork cards section */
+
+  .card {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    height: 500px;
+    border-radius: 24px;
+  }
+
+  .img {
+    margin: 24px;
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    order: 1;
+  }
+
+  .pro-img-2 {
+    order: 1;
+  }
+
+  .part2 {
+    padding: 70px 23% 27px 22px;
+  }
+
+  /* style About me section */
+
+  .about {
+    display: flex;
+  }
+
+  .sec1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0 2% 0 8%;
+  }
+
+  .sec2 {
+    width: 60%;
+    margin-right: 10%;
+  }
+
+  .Separator {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-right: 300px;
+  }
+
+  .js-icon {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    margin: 0;
+    padding-right: 50px;
+    width: 30%;
+  }
+
+  .html-icon {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    margin: 0;
+    padding-right: 90px;
+    width: 10%;
+  }
+
+  .css-icon {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    margin: 0;
+    padding-right: 90px;
+    width: 10%;
+  }
+
+  /* Style footer-part */
+
+  .footer-part {
+    display: flex;
+    padding-bottom: 139px;
+    padding-top: 100px;
+  }
+
+  .contact-form {
+    width: 40%;
+  }
+
+  .call-me {
+    display: block;
+    text-align: center;
+    margin: 0 20% 0 20%;
+  }
+
+  .nem {
+    margin-left: 80%;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .last-button {
+    margin-left: 115%;
+  }
 }

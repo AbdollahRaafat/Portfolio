@@ -521,9 +521,8 @@ ul {
   }
 
   .img:hover {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
-
 
   .pro-img-2 {
     order: 1;
@@ -609,10 +608,9 @@ ul {
     transition-delay: 0.25s;
   }
    
-.call-me:hover {
+  .call-me:hover {
     transform: translate(12px);
   }
-
 
   .nem {
     margin-left: 80%;

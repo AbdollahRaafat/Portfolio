@@ -607,7 +607,7 @@ ul {
     transition-duration: 0.75s;
     transition-delay: 0.25s;
   }
-   
+
   .call-me:hover {
     transform: translate(12px);
   }

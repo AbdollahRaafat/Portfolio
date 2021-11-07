@@ -445,6 +445,11 @@ ul {
 @media only screen and (min-width: 1000px) {
   /* style Skeleton section */
 
+  button {
+    transition-duration: 1.5s;
+    transition-delay: 0.25s;
+  }
+
   .skeleton {
     margin-top: 0;
     height: 80%;
@@ -461,6 +466,8 @@ ul {
 
   .my-logo {
     padding-right: 40%;
+    transition-duration: 1s;
+    transform: rotate(360deg);
   }
 
   .nav-button {
@@ -509,6 +516,12 @@ ul {
     height: 448px;
     border-radius: 8px;
     order: 1;
+    transition-duration: 1.25s;
+    transition-delay: 0.25s;
+  }
+
+  .img:hover {
+    transform: scale(1.1);
   }
 
   .pro-img-2 {
@@ -591,6 +604,12 @@ ul {
     display: block;
     text-align: center;
     margin: 0 20% 0 20%;
+    transition-duration: 0.75s;
+    transition-delay: 0.25s;
+  }
+
+  .call-me:hover {
+    transform: translate(12px);
   }
 
   .nem {

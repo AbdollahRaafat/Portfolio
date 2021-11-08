@@ -13,7 +13,7 @@ This is a desktop version of my portfolio.
 
 ## Live Demo
 
-[Show.](https://abdollahraafat.github.io/Portfolio/)
+[See the Demo](https://abdollahraafat.github.io/Portfolio/)
 
 ## Built With
 

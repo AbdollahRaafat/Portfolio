@@ -506,14 +506,15 @@ ul {
     display: flex;
     width: 80%;
     margin-left: 10%;
-    height: 500px;
+    margin-right: 10%;
+    height: 100%;
     border-radius: 24px;
   }
 
   .img {
     margin: 24px;
-    width: 544px;
-    height: 448px;
+    width: auto;
+    height: auto;
     border-radius: 8px;
     order: 1;
     transition-duration: 1.25s;
@@ -529,7 +530,8 @@ ul {
   }
 
   .part2 {
-    padding: 70px 23% 27px 22px;
+    padding: 70px 10% 27px 22px;
+    width: 60%;
   }
 
   /* style About me section */

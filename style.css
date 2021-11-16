@@ -16,7 +16,7 @@ body {
   height: 600px;
   border: 1px solid white;
   border-radius: 0 0 0 75px;
-  background-color: white;  
+  background-color: white;
 }
 
 /* Style The header */
@@ -67,7 +67,7 @@ a {
 }
 
 #pop-list {
-  background-color: #6070FF;
+  background-color: #6070ff;
   height: 100%;
   width: 0;
   position: fixed;
@@ -77,8 +77,8 @@ a {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
-  opacity: 95%;
-            
+  opacity: 93%;
+  overflow: hidden;
 }
 
 #pop-list li a {
@@ -90,17 +90,16 @@ a {
   font-size: 2em;
   line-height: 44px;
   display: block;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   margin: 10px 24px 24px 24px;
 }
 
-#pop-list .closebtn {
+#pop-list #close-Icon {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
-  color: #67798e;
-  margin-left: 50px;
+  color: #fafcfd;
   border: none;
 }
 
@@ -506,7 +505,7 @@ ul {
   .mobile-nav {
     display: none;
   }
-  
+
   .desktop-nav {
     display: flex;
     padding: 26px 10% 26px 150px;
@@ -540,7 +539,7 @@ ul {
     display: flex;
     height: 1000px;
     background-size: contain;
-    margin: 30px 0 0 0 ;
+    margin: 30px 0 0 0;
   }
 
   h1 {

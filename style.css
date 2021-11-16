@@ -94,12 +94,12 @@ a {
   margin: 10px 24px 24px 24px;
 }
 
-#pop-list .closebtn {
+#pop-list #close-Icon {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
-  color: #67798e;
+  color: #fafcfd;
   margin-left: 50px;
   border: none;
 }

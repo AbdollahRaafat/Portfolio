@@ -3,7 +3,7 @@ menuIcon.addEventListener('click', () => {
   document.getElementById('pop-list').style.width = '100%';
 });
 
-const closeIcon = document.getElementById('colse-Icon');
+const closeIcon = document.getElementById('close-Icon');
 closeIcon.addEventListener('click', () => {
   document.getElementById('pop-list').style.width = '0';
 });

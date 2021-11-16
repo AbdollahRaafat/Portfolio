@@ -7,27 +7,32 @@ body {
   display: grid;
   width: 100%;
   background-color: #f7f7f7;
+  margin: 0;
 }
 
 /* Style The hole skeleton */
 
 .skeleton {
-  height: 700px;
+  height: 600px;
   border: 1px solid white;
   border-radius: 0 0 0 75px;
-  background-color: white;
-  margin-bottom: 50px;
+  background-color: white;  
 }
 
 /* Style The header */
+header {
+  background-color: white;
+  width: 100%;
+  height: 92px;
+  position: fixed;
+}
 
 nav {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  height: 92px;
   align-items: baseline;
-  padding: 30px 15px 0 15px;
+  background-color: white;
+  padding: 20px 5%;
 }
 
 .my-logo {
@@ -49,12 +54,54 @@ nav {
   border: none;
 }
 
-.nav-button {
+.desktop-nav {
   display: none;
 }
 
 .large {
   font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#pop-list {
+  background-color: #6070FF;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  opacity: 95%;
+            
+}
+
+#pop-list li a {
+  color: #fff5e1;
+  padding: 14px 16px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 44px;
+  display: block;
+  padding-bottom: 15px;
+  margin: 10px 24px 24px 24px;
+}
+
+#pop-list .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  color: #67798e;
+  margin-left: 50px;
+  border: none;
 }
 
 /* Style The headline */
@@ -65,6 +112,7 @@ nav {
   flex-direction: column;
   background-image: url('images/header-shapes mobile.png');
   background-repeat: no-repeat;
+  margin-top: 70px;
 }
 
 h1 {
@@ -106,7 +154,7 @@ ul {
 /* Style the Works section */
 
 .grid-container {
-  background-color: #f7f7f7;
+  background-color: #f9f5f5;
   display: grid;
   row-gap: 88px;
 }
@@ -455,7 +503,11 @@ ul {
     height: 80%;
   }
 
-  nav {
+  .mobile-nav {
+    display: none;
+  }
+  
+  .desktop-nav {
     display: flex;
     padding: 26px 10% 26px 150px;
   }
@@ -465,7 +517,7 @@ ul {
   }
 
   .my-logo {
-    padding-right: 40%;
+    margin-right: 60%;
     transition-duration: 1s;
     transform: rotate(360deg);
   }
@@ -476,7 +528,7 @@ ul {
     border: none;
     background-color: white;
     color: #344563;
-    padding-right: 0;
+    padding-left: 10%;
     text-decoration: none;
   }
 
@@ -488,7 +540,7 @@ ul {
     display: flex;
     height: 1000px;
     background-size: contain;
-    margin: 0;
+    margin: 30px 0 0 0 ;
   }
 
   h1 {

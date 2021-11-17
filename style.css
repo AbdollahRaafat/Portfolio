@@ -67,16 +67,15 @@ a {
 }
 
 #pop-list {
+  margin: 0;
   background-color: #6070ff;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
+  transition: 0.4s;
   opacity: 93%;
   overflow: hidden;
 }
@@ -90,17 +89,20 @@ a {
   font-size: 2em;
   line-height: 44px;
   display: block;
-  padding-bottom: 10px;
   margin: 10px 24px 24px 24px;
 }
 
 #pop-list #close-Icon {
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 25px;
   font-size: 36px;
   color: #fafcfd;
   border: none;
+}
+
+#pop-list #pop-buttons-1 {
+  margin-top: 150px;
 }
 
 /* Style The headline */

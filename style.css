@@ -7,27 +7,32 @@ body {
   display: grid;
   width: 100%;
   background-color: #f7f7f7;
+  margin: 0;
 }
 
 /* Style The hole skeleton */
 
 .skeleton {
-  height: 700px;
+  height: 600px;
   border: 1px solid white;
   border-radius: 0 0 0 75px;
   background-color: white;
-  margin-bottom: 50px;
 }
 
 /* Style The header */
+header {
+  background-color: white;
+  width: 100%;
+  height: 92px;
+  position: fixed;
+}
 
 nav {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  height: 92px;
   align-items: baseline;
-  padding: 30px 15px 0 15px;
+  background-color: white;
+  padding: 20px 5%;
 }
 
 .my-logo {
@@ -49,12 +54,55 @@ nav {
   border: none;
 }
 
-.nav-button {
+.desktop-nav {
   display: none;
 }
 
 .large {
   font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#pop-list {
+  margin: 0;
+  background-color: #6070ff;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.4s;
+  opacity: 93%;
+  overflow: hidden;
+}
+
+#pop-list li a {
+  color: #fff5e1;
+  padding: 14px 16px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 44px;
+  display: block;
+  margin: 10px 24px 24px 24px;
+}
+
+#pop-list #close-Icon {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  font-size: 36px;
+  color: #fafcfd;
+  border: none;
+}
+
+#pop-list #pop-buttons-1 {
+  margin-top: 150px;
 }
 
 /* Style The headline */
@@ -65,6 +113,7 @@ nav {
   flex-direction: column;
   background-image: url('images/header-shapes mobile.png');
   background-repeat: no-repeat;
+  margin-top: 70px;
 }
 
 h1 {
@@ -106,7 +155,7 @@ ul {
 /* Style the Works section */
 
 .grid-container {
-  background-color: #f7f7f7;
+  background-color: #f9f5f5;
   display: grid;
   row-gap: 88px;
 }
@@ -455,7 +504,11 @@ ul {
     height: 80%;
   }
 
-  nav {
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
     display: flex;
     padding: 26px 10% 26px 150px;
   }
@@ -465,7 +518,7 @@ ul {
   }
 
   .my-logo {
-    padding-right: 40%;
+    margin-right: 60%;
     transition-duration: 1s;
     transform: rotate(360deg);
   }
@@ -476,7 +529,7 @@ ul {
     border: none;
     background-color: white;
     color: #344563;
-    padding-right: 0;
+    padding-left: 10%;
     text-decoration: none;
   }
 
@@ -488,7 +541,7 @@ ul {
     display: flex;
     height: 1000px;
     background-size: contain;
-    margin: 0;
+    margin: 30px 0 0 0;
   }
 
   h1 {
@@ -506,14 +559,15 @@ ul {
     display: flex;
     width: 80%;
     margin-left: 10%;
-    height: 500px;
+    margin-right: 10%;
+    height: 100%;
     border-radius: 24px;
   }
 
   .img {
     margin: 24px;
-    width: 544px;
-    height: 448px;
+    width: auto;
+    height: auto;
     border-radius: 8px;
     order: 1;
     transition-duration: 1.25s;
@@ -529,7 +583,8 @@ ul {
   }
 
   .part2 {
-    padding: 70px 23% 27px 22px;
+    padding: 70px 10% 27px 22px;
+    width: 60%;
   }
 
   /* style About me section */

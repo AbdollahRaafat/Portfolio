@@ -1,3 +1,5 @@
+// Menu-btn
+
 const menuIcon = document.getElementById('menu-id');
 
 menuIcon.addEventListener('click', () => {
@@ -23,3 +25,5 @@ const openContact = document.getElementById('pop-buttons-3');
 openContact.addEventListener('click', () => {
   document.getElementById('pop-list').style.width = '0';
 });
+
+// Pop-up see-project

@@ -195,7 +195,7 @@ ul {
 }
 
 .el {
-  margin-right: 2.5%;
+  margin-right: 3%;
 }
 
 .descrip {
@@ -203,8 +203,8 @@ ul {
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  width: .6em;
+  height: .6em;
   border-radius: 50%;
   background-color: #c1c7d0;
 }
@@ -217,9 +217,9 @@ ul {
 .use {
   border-radius: 8px;
   background-color: #ebebff;
-  padding: 4px 12px;
+  padding: 4px 6px;
   color: #6070ff;
-  font-size: 12px;
+  font-size: .7em;
 }
 
 .tech {
@@ -244,13 +244,13 @@ ul {
 }
 
 .see-project:hover {
-  background-color: #91b0ff;
+  background-color: #2462ff;
   color: white;
   border: none;
 }
 
 .see-project:active {
-  background-color: #1d5cfa;
+  background-color: #0400ff;
   color: white;
 }
 
@@ -259,6 +259,7 @@ ul {
   color: gray;
   border: 1px solid gray;
 }
+
 
 /* style About-me section */
 .about {
@@ -489,14 +490,146 @@ ul {
   margin: 0 0 8px 38%;
 }
 
+/*Style the work pop-up modal*/
+
+#pop-up {
+  border: 1px solid black;
+  border-radius: 16px;
+  background-color: white;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  width: 80%;
+  max-width: 90%;
+  transition: 200ms ease-in-out;
+}
+
+#name-close-part {
+  display: flex;
+  padding: 5px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-projectname {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+#close-Icon-modal {
+  font-size: 40px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+#project-img-modal {
+  width: 90%;
+  margin-left: 5%;  
+}
+
+.modal-info {
+  display: flex;
+  padding: 10px 10px;
+  margin-left: 3%;
+  font-size: 0em;
+}
+
+.modal-info-2 {
+  display: flex;
+  width: 100%;
+  justify-content: baseline;
+}
+
+.dot-modal {
+  margin: 15px 7% 0 0;
+}
+
+.modal-details-paragraph {
+  font-size: 2vmin;
+  margin: 1% 1.5% 0 2.5%; 
+  color: #3d3d3d;
+}
+
+.stack-modal {
+  color: #7a869a;
+  margin-right: 3%;
+  font-size: 10px;
+}
+
+.canopy {
+  color: rgba(0, 0, 0, 0.644);
+  font-size: 10px;
+  margin: 10px 5% 0  0;
+}
+
+.tech-modal {
+  display: flex;
+  color:white;
+  border-bottom: 4px solid #ebecf0;
+  padding-bottom: 10px;
+}
+
+#body-modal {
+  margin-left: 5% ;
+}
+
+#btns-container{
+  display: flex;
+  margin: 20px 5% 5% 0;
+}
+
+.modal-btn {
+  font-size: 50px;
+  height: 40px;
+  width: 50%;
+  border: 2px solid #2360fa;
+  font-size: 15px;
+  border-radius: 8px;
+  color: #396df2;
+  background-color: white;
+
+}
+
+.modal-btn:hover {
+  background-color: #2462ff;
+  color: white;
+  border: none;
+}
+
+.modal-btn:active {
+  background-color: #0400ff;
+  color: white;
+}
+
+.modal-btn:disabled {
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+}
+
+#ovelay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  display: none;
+}
+
+
 /* Media Queries for Desktop Screen */
 
 @media only screen and (min-width: 1000px) {
   /* style Skeleton section */
 
   button {
-    transition-duration: 1.5s;
-    transition-delay: 0.25s;
+    transition-duration: 0.5s;
+
   }
 
   .skeleton {
@@ -677,5 +810,64 @@ ul {
 
   .last-button {
     margin-left: 115%;
+  }
+
+  /*Style the work pop-up modal*/
+
+  #pop-up {
+    height: 90%;
+  }
+
+  #name-close-part {
+    margin: 0;
+    padding: 0.1% 1% 0 2%;
+  }
+
+  #project-img-modal {
+    width:min-content;
+    height: auto;
+    margin-left: 30%;
+  }
+
+  .modal-details-paragraph {
+    font-size: 1.8vmin;
+  }
+
+  .modal-details {
+    font-size: 20px;
+  }
+
+  .modal-info {
+    margin-left: 2.5% ;
+    padding: 0;
+  }
+
+  .dot-modal {
+    margin-top: 30px;
+  }
+
+  .canopy{
+    margin: 20px 15px 0 10px;
+    font-size: 15px;
+  }
+
+  #body-modal {
+    display: flex;
+    margin-left: 1%;
+  }
+
+  #body-modal-one {
+    width: 60%;
+    
+  }
+
+  #body-modal-two {
+    width: 40%;
+    margin-top: 20px ;
+  }
+
+  
+  .modal-btn {
+    height: 60%;
   }
 }

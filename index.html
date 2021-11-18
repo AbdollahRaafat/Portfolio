@@ -31,7 +31,7 @@
             <header>
 
                 <nav class="mobile-nav">
-                    <a href="#" class="my-logo">My Logo</a>
+                    <a href="#" class="my-logo">3bdo</a>
                     <button class="menu" id="menu-id">
                         <p class="Menu-Icon"></p>
                         <p class="Menu-Icon"></p>
@@ -42,7 +42,7 @@
 
                 <div class="desktop-nav">
 
-                    <a href="#" class="my-logo">My Logo</a>
+                    <a href="#" class="my-logo">3bdo</a>
 
                     <a href="#work-id" class="Portoflio nav-button">
                         Portoflio
@@ -60,7 +60,7 @@
                 <div>
                     <ul id="pop-list">
                         <li>
-                            <a href="#" id="close-Icon">X</a>
+                            <a href="#" id="close-Icon">&times;</a>
                         </li>
                         <li>
                             <a href="#work-id" class="Portoflio" id="pop-buttons-1">Portoflio</a>
@@ -105,8 +105,9 @@
             </section>
         </section>
         
-        <!--Setup the Works section -->
+       
 
+        <!-- Works cards container-->
         <section class="grid-container" id="work-id"> 
             <article class="card">
                 <div class="pro-img">
@@ -230,7 +231,7 @@
                     </ul>  
                     </div>
         
-                    <button class="see-project">
+                    <button data-modal-target="#pop-up" class="see-project">
                     See Project
                     </button>
                 </div>
@@ -343,7 +344,56 @@
             <img src="images/shape.png" class="shape" height="5px" width="134px">
         </footer>
 
+    <!--Setup the Works section -->
 
+         <div id="pop-up">
+
+            <div id="modal-head">
+                <div id="name-close-part">
+                    <h2 class="modal-projectname">Tonic</h2>
+                    <a href="#" id="close-Icon-modal">&times;</a>  
+                </div>
+                
+                <div class="modal-info">
+                    <h3 class="modal-details canopy">CANOPY</h3>
+                    <div class="modal-info-2">
+                        <div class="dot dot-modal"></div>
+                        <p class="modal-details stack-modal">Back End Dev</p>
+                        <div class="dot dot-modal"></div>
+                        <p class="modal-details stack-modal">2015</p>
+                    </div>
+                       
+                </div>
+                <img src="images/ex1.png" id="project-img-modal">
+            </div>
+
+            <div id="body-modal">
+
+                <div id="body-modal-one">
+                    <p class="modal-details-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essent
+                    </p> 
+                </div>
+                
+                <div id="body-modal-two">
+                    <ul class="tech-modal">
+                        <li class="use el">html</li>
+                        <li class="use el">css</li>
+                        <li class="use el">javaScript</li>
+                    </ul>  
+
+                    <div id="btns-container">
+                        <button class="modal-btn">See live  <img src="/images/LiveIcon.png" > </button>
+                        <button class="modal-btn">See Source  <img src="/images/GithubVector.png" > </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="ovelay"></div>
 
 
 

@@ -100,3 +100,24 @@ modalCancelBtn.addEventListener('click', () => {
   removeoverlayDIV.style.width = '0';
   removeModalContainer.style.display = 'none';
 });
+
+//validation
+function valid() {
+
+  const input = document.getElementById('mail');
+  const isUpperCase = (input) => /^[A-Z]*$/.test(input);
+  const msg= document.getElementById('mail-msg');
+
+  if (isUpperCase) {
+    const msg= document.getElementById('mail-msg');
+    msg.style.display = 'block';
+    return false;
+  }
+  
+  else {
+    msg.style.display = 'none';
+    return true;
+  }
+
+}
+

@@ -421,7 +421,6 @@ ul {
 .footer-part {
   background-color: #6070ff;
   color: white;
-  display: flex;
   flex-direction: column;
   border-radius: 60px 0 0 0;
 }
@@ -445,6 +444,7 @@ ul {
   font-size: 15px;
   width: 85%;
   padding: 0 0 0 15px;
+  height: 48px;
 }
 
 #msg {
@@ -452,8 +452,11 @@ ul {
   padding-top: 15px;
 }
 
-.hint {
-  height: 48px;
+.error
+{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: none;
 }
 
 .last-button {
@@ -804,6 +807,10 @@ ul {
   .shape {
     display: none;
   }
+
+  .error
+  {
+  } 
 
   .last-button {
     margin-left: 115%;

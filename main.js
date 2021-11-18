@@ -102,6 +102,7 @@ modalCancelBtn.addEventListener('click', () => {
 });
 
 //validation
+
 function valid() {
 
   const input = document.getElementById('mail');

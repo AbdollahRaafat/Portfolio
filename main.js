@@ -100,4 +100,3 @@ modalCancelBtn.addEventListener('click', () => {
   removeoverlayDIV.style.width = '0';
   removeModalContainer.style.display = 'none';
 });
-

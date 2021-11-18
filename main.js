@@ -81,9 +81,7 @@ seeProjectBtn.forEach((item, i) => {
 
     projectTitle.textContent = project.name;
     const projectDesc = modalMenu.querySelectorAll('.modal-details-paragraph');
-    const [desktopDesc] = projectDesc;
-    //desktopDesc.textContent = project.description;
-    //projectDesc.textContent = project.description;
+    projectDesc.textContent = project.description;
     const projectDesktopImage = modalMenu.querySelector('#project-img-modal');
     projectDesktopImage.src = project.featuredImage;
     const liveLink = document.querySelector('.live-link');
@@ -94,11 +92,8 @@ seeProjectBtn.forEach((item, i) => {
     allTech.forEach((item, i) => {
       item.textContent = project.technology[i];
     });
-
-    
     modalMenu.style.display = 'block';
     overlayDiv.style.width = '100%';
-    
   });
 });
 

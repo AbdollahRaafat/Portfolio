@@ -502,8 +502,7 @@ ul {
   z-index: 9;
   width: 80%;
   max-width: 90%;
-  transition: 200ms ease-in-out;
-  /* display: none; */
+  display: none;
 }
 
 #name-close-part {
@@ -618,7 +617,7 @@ ul {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
-  display: none;
+  width: 0;
 }
 
 

@@ -78,6 +78,7 @@ seeProjectBtn.forEach((item, i) => {
     const modalMenu = document.querySelector('#pop-up');
     const overlayDiv = document.querySelector('#ovelay');
     const projectTitle = modalMenu.querySelector('.modal-projectname');
+
     projectTitle.textContent = project.name;
     const projectDesc = modalMenu.querySelectorAll('.modal-details-paragraph');
     const [desktopDesc] = projectDesc;
@@ -93,15 +94,19 @@ seeProjectBtn.forEach((item, i) => {
     allTech.forEach((item, i) => {
       item.textContent = project.technology[i];
     });
+
     
-    overlayDiv.style.display = null;
     modalMenu.style.display = 'block';
+    overlayDiv.style.width = '100%';
+    
   });
 });
 
 const modalCancelBtn = document.querySelector('#close-Icon-modal');
 modalCancelBtn.addEventListener('click', () => {
   const removeModalContainer = document.querySelector('#pop-up');
+  const removeoverlayDIV = document.querySelector('#ovelay');
+  removeoverlayDIV.style.width = '0';
   removeModalContainer.style.display = 'none';
 });
 

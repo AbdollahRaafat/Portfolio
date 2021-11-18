@@ -88,10 +88,10 @@ seeProjectBtn.forEach((item, i) => {
     liveLink.href = project.liveVersion;
     const liveSourceCode = document.querySelector('.source-code');
     liveSourceCode.href = project.sourceCode;
-    const allTech = document.querySelectorAll('.use');
+    /* const allTech = document.querySelectorAll('.use');
     allTech.forEach((item, i) => {
       item.textContent = project.technology[i];
-    });
+    }); */
     modalMenu.style.display = 'block';
     overlayDiv.style.width = '100%';
   });
@@ -104,4 +104,3 @@ modalCancelBtn.addEventListener('click', () => {
   removeoverlayDIV.style.width = '0';
   removeModalContainer.style.display = 'none';
 });
-

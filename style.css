@@ -489,6 +489,11 @@ ul {
   margin: 0 0 8px 38%;
 }
 
+.mob-hid {
+  display: none;
+}
+
+
 /* Style the work pop-up modal */
 
 #pop-up {
@@ -860,5 +865,9 @@ ul {
 
   .modal-btn {
     height: 60%;
+  }
+
+  .mob-hid {
+    display: block;
   }
 }

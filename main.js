@@ -27,3 +27,81 @@ openContact.addEventListener('click', () => {
 });
 
 // Pop-up see-project
+const myProjects = [
+
+  {
+    name: 'Tonic',
+    description: `A daily selection of privately'personalized reads; no accounts or sign-ups
+    required.`,
+    featuredImage: './images/ex1.png',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: '#',
+    sourceCode: '#',
+  },
+
+  {
+    name: 'Multi-Post Stories',
+    description: `A daily selection of privately'personalized reads; no accounts or sign-ups
+    required.`,
+    featuredImage: './images/ex2.png',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: '#',
+    sourceCode: '#',
+  },
+
+  {
+    name: 'Tonic',
+    description: `A daily selection of privately'personalized reads; no accounts or sign-ups
+    required.`,
+    featuredImage: './images/ex3.png',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: '#',
+    sourceCode: '#',
+  },
+
+  {
+    name: 'Multi-Post Stories',
+    description: `A daily selection of privately'personalized reads; no accounts or sign-ups
+    required.`,
+    featuredImage: './images/ex4.png',
+    technology: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    liveVersion: '#',
+    sourceCode: '#',
+  },
+
+];
+
+const seeProjectBtn = document.querySelectorAll('.popup-cards');
+seeProjectBtn.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    const project = myProjects[i];
+    const modalMenu = document.querySelector('#pop-up');
+    const overlayDiv = document.querySelector('#ovelay');
+    const projectTitle = modalMenu.querySelector('.modal-projectname');
+    projectTitle.textContent = project.name;
+    const projectDesc = modalMenu.querySelectorAll('.modal-details-paragraph');
+    const [desktopDesc] = projectDesc;
+    desktopDesc.textContent = project.description;
+    projectDesc.textContent = project.description;
+    const projectDesktopImage = modalMenu.querySelector('#project-img-modal');
+    projectDesktopImage.src = project.featuredImage;
+    const liveLink = document.querySelector('.live-link');
+    liveLink.href = project.liveVersion;
+    const liveSourceCode = document.querySelector('.source-code');
+    liveSourceCode.href = project.sourceCode;
+    const allTech = document.querySelectorAll('.use');
+    allTech.forEach((item, i) => {
+      item.textContent = project.technology[i];
+    });
+    
+    overlayDiv.style.display = null;
+    modalMenu.style.display = 'block';
+  });
+});
+
+const modalCancelBtn = document.querySelector('#close-Icon-modal');
+modalCancelBtn.addEventListener('click', () => {
+  const removeModalContainer = document.querySelector('#pop-up');
+  removeModalContainer.style.display = 'none';
+});
+

@@ -526,20 +526,18 @@ ul {
 
 #project-img-modal {
   width: 90%;
-  margin-left: 5%;  
+  margin-left: 5%;
 }
 
 .modal-info {
   display: flex;
   padding: 10px 10px;
   margin-left: 3%;
-  font-size: 0em;
 }
 
 .modal-info-2 {
   display: flex;
   width: 100%;
-  justify-content: baseline;
 }
 
 .dot-modal {
@@ -548,7 +546,7 @@ ul {
 
 .modal-details-paragraph {
   font-size: 2vmin;
-  margin: 1% 1.5% 0 2.5%; 
+  margin: 1% 1.5% 0 2.5%;
   color: #3d3d3d;
 }
 
@@ -566,22 +564,21 @@ ul {
 
 .tech-modal {
   display: flex;
-  color:white;
+  color: white;
   border-bottom: 4px solid #ebecf0;
   padding-bottom: 10px;
 }
 
 #body-modal {
-  margin-left: 5% ;
+  margin-left: 5%;
 }
 
-#btns-container{
+#btns-container {
   display: flex;
   margin: 20px 5% 5% 0;
 }
 
 .modal-btn {
-  font-size: 50px;
   height: 40px;
   width: 50%;
   border: 2px solid #2360fa;
@@ -589,7 +586,6 @@ ul {
   border-radius: 8px;
   color: #396df2;
   background-color: white;
-
 }
 
 .modal-btn:hover {
@@ -620,7 +616,6 @@ ul {
   width: 0;
 }
 
-
 /* Media Queries for Desktop Screen */
 
 @media only screen and (min-width: 1000px) {
@@ -628,7 +623,6 @@ ul {
 
   button {
     transition-duration: 0.5s;
-
   }
 
   .skeleton {
@@ -811,7 +805,7 @@ ul {
     margin-left: 115%;
   }
 
-  /*Style the work pop-up modal*/
+  /* Style the work pop-up modal */
 
   #pop-up {
     height: 90%;
@@ -823,7 +817,7 @@ ul {
   }
 
   #project-img-modal {
-    width:min-content;
+    width: min-content;
     height: auto;
     margin-left: 30%;
   }

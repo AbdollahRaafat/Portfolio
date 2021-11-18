@@ -203,8 +203,8 @@ ul {
 }
 
 .dot {
-  width: .6em;
-  height: .6em;
+  width: 0.6em;
+  height: 0.6em;
   border-radius: 50%;
   background-color: #c1c7d0;
 }
@@ -219,7 +219,7 @@ ul {
   background-color: #ebebff;
   padding: 4px 6px;
   color: #6070ff;
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 .tech {
@@ -259,7 +259,6 @@ ul {
   color: gray;
   border: 1px solid gray;
 }
-
 
 /* style About-me section */
 .about {
@@ -490,20 +489,21 @@ ul {
   margin: 0 0 8px 38%;
 }
 
-/*Style the work pop-up modal*/
+/* Style the work pop-up modal */
 
 #pop-up {
   border: 1px solid black;
   border-radius: 16px;
   background-color: white;
   position: fixed;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
   width: 80%;
   max-width: 90%;
   transition: 200ms ease-in-out;
+  /* display: none; */
 }
 
 #name-close-part {
@@ -838,7 +838,7 @@ ul {
   }
 
   .modal-info {
-    margin-left: 2.5% ;
+    margin-left: 2.5%;
     padding: 0;
   }
 
@@ -846,7 +846,7 @@ ul {
     margin-top: 30px;
   }
 
-  .canopy{
+  .canopy {
     margin: 20px 15px 0 10px;
     font-size: 15px;
   }
@@ -858,15 +858,13 @@ ul {
 
   #body-modal-one {
     width: 60%;
-    
   }
 
   #body-modal-two {
     width: 40%;
-    margin-top: 20px ;
+    margin-top: 20px;
   }
 
-  
   .modal-btn {
     height: 60%;
   }

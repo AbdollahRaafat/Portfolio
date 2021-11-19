@@ -452,8 +452,7 @@ ul {
   padding-top: 15px;
 }
 
-.error
-{
+.error {
   color: rgb(0, 0, 0);
   text-align: center;
   display: none;
@@ -807,10 +806,6 @@ ul {
   .shape {
     display: none;
   }
-
-  .error
-  {
-  } 
 
   .last-button {
     margin-left: 115%;

@@ -101,7 +101,8 @@ modalCancelBtn.addEventListener('click', () => {
   removeModalContainer.style.display = 'none';
 });
 
-//validation
+//  validation
+
 const email = document.getElementById('mail');
 const form = document.querySelector('#contact-form');
 

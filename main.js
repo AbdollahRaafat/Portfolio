@@ -102,22 +102,17 @@ modalCancelBtn.addEventListener('click', () => {
 });
 
 //validation
-function valid() {
+const email = document.getElementById('mail');
+const form = document.querySelector('#contact-form');
 
-  const input = document.getElementById('mail');
-  const isUpperCase = (input) => /^[A-Z]*$/.test(input);
-  const msg= document.getElementById('mail-msg');
-
-  if (isUpperCase) {
-    const msg= document.getElementById('mail-msg');
-    msg.style.display = 'block';
-    return false;
+form.addEventListener('submit', (e) => {
+  const emailinput = email.value;
+  const errorEmail = document.querySelector('.error');
+  if (emailinput.toLowerCase() !== emailinput) {
+    e.preventDefault();
+    errorEmail.innerText = 'Error: please enter lower-case email address';
+  } else {
+    errorEmail.style.display = 'none';
   }
-  
-  else {
-    msg.style.display = 'none';
-    return true;
-  }
-
-}
+});
 

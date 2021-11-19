@@ -102,6 +102,7 @@ modalCancelBtn.addEventListener('click', () => {
 });
 
 //validation
+<<<<<<< HEAD
 
 function valid() {
 
@@ -118,7 +119,19 @@ function valid() {
   else {
     msg.style.display = 'none';
     return true;
-  }
+=======
+const email = document.getElementById('mail');
+const form = document.querySelector('#contact-form');
 
-}
+form.addEventListener('submit', (e) => {
+  const emailinput = email.value;
+  const errorEmail = document.querySelector('.error');
+  if (emailinput.toLowerCase() !== emailinput) {
+    e.preventDefault();
+    errorEmail.innerText = 'Error: please enter lower-case email address';
+  } else {
+    errorEmail.style.display = 'none';
+>>>>>>> pop-up
+  }
+});
 

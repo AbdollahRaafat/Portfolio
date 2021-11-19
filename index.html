@@ -321,7 +321,7 @@
                     I’d love to help with it </p>
                 
 
-                <form onsubmit="return valid()" action="https://formspree.io/f/xqkwvblb" class="contact-form" method="post">
+                <form action="https://formspree.io/f/xqkwvblb" class="contact-form" id="contact-form" method="post">
                     <ul>
                         <li>
                             <input type="text" id="name" name="user_name" placeholder="Name" class="nem" maxlength="30" required>
@@ -335,12 +335,12 @@
                         
                         <li>
                             
-                            <button class="last-button" cltype="submit" onclick="valid()">Get It Touch</button>
+                            <button class="last-button" type="submit">Get It Touch</button>
                         </li>
                         
                     </ul>
                 </form>
-                <p id="mail-msg" class="error">Email must be in lowercase</p>
+                <span class="error"></span>
             </section>
             <img src="images/shape.png" class="shape" height="5px" width="134px">
         </footer>

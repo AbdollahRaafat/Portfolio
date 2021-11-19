@@ -1,5 +1,7 @@
 // Menu-btn
 
+const { formatters } = require("stylelint");
+
 const menuIcon = document.getElementById('menu-id');
 
 menuIcon.addEventListener('click', () => {
@@ -103,22 +105,16 @@ modalCancelBtn.addEventListener('click', () => {
 
 //validation
 
-function valid() {
+const mail = document.getElementById('mail');
+const form = document.querySelector('#send-msg');
 
-  const input = document.getElementById('mail');
-  const isUpperCase = (input) => /^[A-Z]*$/.test(input);
-  const msg= document.getElementById('mail-msg');
-
-  if (isUpperCase) {
-    const msg= document.getElementById('mail-msg');
-    msg.style.display = 'block';
-    return false;
+form.addEventListener('submit', (e) => {
+  const inputt = mail.value;
+  const error = document.querySelector('.error');
+  if (inputt.toLowerCase() !== inputt) {
+    e.preventDefault();
+    error.style.display = 'block';
+  } else {
+    error.style.display = 'none';
   }
-  
-  else {
-    msg.style.display = 'none';
-    return true;
-  }
-
-}
-
+});

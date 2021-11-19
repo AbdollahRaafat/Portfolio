@@ -321,29 +321,29 @@
                     I’d love to help with it </p>
                 
 
-                <form onsubmit="return valid()" action="https://formspree.io/f/xqkwvblb" class="contact-form" method="post">
-                    <ul>
-                        <li>
-                            <input type="text" id="name" name="user_name" placeholder="Name" class="nem" maxlength="30" required>
-                        </li>
-                        <li>
-                            <input type="email" id="mail" name="user_email" placeholder="E-mail" class="nem" required>
-                        </li>
-                        <li>
-                            <textarea id="msg" name="user_message" placeholder="Write your message here" class="nem" maxlength="500" required></textarea>
-                        </li>
-                        
-                        <li>
+                    <form action="https://formspree.io/f/xqkwvblb" class="contact-form" id="send-msg" method="post">
+                        <ul>
+                            <li>
+                                <input type="text" id="name" name="user_name" placeholder="Name" class="nem" maxlength="30" required>
+                            </li>
+                            <li>
+                                <input type="email" id="mail" name="user_email" placeholder="E-mail" class="nem" required>
+                            </li>
+                            <li>
+                                <textarea id="msg" name="user_message" placeholder="Write your message here" class="nem" maxlength="500" required></textarea>
+                            </li>
                             
-                            <button class="last-button" cltype="submit" onclick="valid()">Get It Touch</button>
-                        </li>
-                        
-                    </ul>
-                </form>
-                <p id="mail-msg" class="error">Email must be in lowercase</p>
-            </section>
-            <img src="images/shape.png" class="shape" height="5px" width="134px">
-        </footer>
+                            <li>
+                                
+                                <button id="submit-btn" class="last-button" cltype="submit" onclick="valid()">Get It Touch</button>
+                            </li>
+                            
+                        </ul>
+                    </form>
+                    <small id="mail-msg" class="error">Email must be in lowercase</small>
+                </section>
+                <img src="images/shape.png" class="shape" height="5px" width="134px">
+            </footer>
 
     <!--Setup the Works section -->
 

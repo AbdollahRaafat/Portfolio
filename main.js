@@ -1,7 +1,5 @@
 // Menu-btn
 
-const { formatters } = require("stylelint");
-
 const menuIcon = document.getElementById('menu-id');
 
 menuIcon.addEventListener('click', () => {
@@ -104,7 +102,6 @@ modalCancelBtn.addEventListener('click', () => {
 });
 
 //validation
-
 const email = document.getElementById('mail');
 const form = document.querySelector('#contact-form');
 
@@ -114,9 +111,8 @@ form.addEventListener('submit', (e) => {
   if (emailinput.toLowerCase() !== emailinput) {
     e.preventDefault();
     errorEmail.innerText = 'Error: please enter lower-case email address';
+    errorEmail.style.display = 'block';
   } else {
     errorEmail.style.display = 'none';
-
   }
 });
-

@@ -1,411 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BML487QSS1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BML487QSS1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            gtag('config', 'G-BML487QSS1');
-        </script>
-    </head>
-    <body>
-        <!-- Setup mobile version skeleton-->
-        
-        <section class="skeleton">
-            <!--Setup the header-->
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-            <header>
+        gtag('config', 'G-BML487QSS1');
+    </script>
+</head>
 
-                <nav class="mobile-nav">
-                    <a href="#" class="my-logo">3bdo</a>
-                    <button class="menu" id="menu-id">
-                        <p class="Menu-Icon"></p>
-                        <p class="Menu-Icon"></p>
-                        <p class="Menu-Icon"></p>
-                    </button>
+<body>
+    <!-- Setup mobile version skeleton-->
 
-                </nav>
+    <section class="skeleton">
+        <!--Setup the header-->
 
-                <div class="desktop-nav">
+        <header>
 
-                    <a href="#" class="my-logo">3bdo</a>
+            <nav class="mobile-nav">
+                <img src="./images/9168209.png" alt="my-logo" class="new-logo" />
 
-                    <a href="#work-id" class="Portoflio nav-button">
-                        Portoflio
-                    </a>
+                <button class="menu" id="menu-id">
+                    <p class="Menu-Icon"></p>
+                    <p class="Menu-Icon"></p>
+                    <p class="Menu-Icon"></p>
+                </button>
 
-                    <a href="#about-id" class="About-b nav-button">
-                        About
-                    </a>
+            </nav>
 
-                    <a href="#contact-id" class="Contact nav-button">
-                        Contact
-                    </a>
+            <div class="desktop-nav">
+
+                <img src="./images/9168209.png" alt="my-logo" class="new-logo" />
+
+                <a href="#work-id" class="Portoflio nav-button">
+                    Portoflio
+                </a>
+
+                <a href="#about-id" class="About-b nav-button">
+                    About
+                </a>
+
+                <a href="#contact-id" class="Contact nav-button">
+                    Contact
+                </a>
+            </div>
+
+            <div>
+                <ul id="pop-list">
+                    <li>
+                        <a href="#" id="close-Icon">&times;</a>
+                    </li>
+                    <li>
+                        <a href="#work-id" class="Portoflio" id="pop-buttons-1">Portoflio</a>
+                    </li>
+                    <li>
+                        <a href="#about-id" class="About-b" id="pop-buttons-2">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact-id" class="Contact" id="pop-buttons-3">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </header>
+
+        <!--Setup the headline -->
+
+        <section class="headline">
+            <h1>I’m Abdollah <br> Glad to see you!</h1>
+            <p class="whoAmI">
+                I’m a software developer!
+                I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+            </p>
+
+            <a href="mailto:abdollah.raafat.daif@gmail.com" class="contact-link">Let's Connect</a>
+
+            <ul>
+                <li> <a href="https://twitter.com/abdollah_raafat" target="blank" class="icon">
+                        <ion-icon name="logo-twitter" class="large"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/abdollah-raafat-886059221/" target="blank" class="icon">
+                        <ion-icon name="logo-linkedin" class="large"></ion-icon></a></li>
+                <li><a href="https://twitter.com/abdollah_raafat" target="blank" class="icon">
+                        <ion-icon name="logo-github" class="large"></ion-icon></a></li>
+                <li><a href="#" target="blank" class="icon">
+                        <ion-icon name="logo-instagram" class="large"></ion-icon></a></li>
+            </ul>
+            <div class="contact-icons"></div>
+        </section>
+    </section>
+
+
+
+    <!-- Works cards container-->
+    <section class="grid-container" id="work-id">
+        <article class="card">
+            <div class="pro-img">
+                <img src="images/ex1.png" class="img" width="50%" height="auto">
+            </div>
+
+            <div class="part2">
+                <h2 class="project-name">COVID-19</h2>
+
+                <div class="info">
+                    <p class="stack el">Back End Dev</p>
+                    <div class="dot el"></div>
+                    <p class="stack">2022</p>
                 </div>
+
+                <p class="descrip">In this project, I built a React Redux COVID-19 Metrics data application that shows
+                    infected cases of COVID-19 world wide. I got the data from a free Covid-19 API online.
+                </p>
 
                 <div>
-                    <ul id="pop-list">
-                        <li>
-                            <a href="#" id="close-Icon">&times;</a>
-                        </li>
-                        <li>
-                            <a href="#work-id" class="Portoflio" id="pop-buttons-1">Portoflio</a>
-                        </li>
-                        <li>
-                            <a href="#about-id" class="About-b" id="pop-buttons-2">About</a>
-                        </li>
-                        <li>
-                            <a href="#contact-id" class="Contact" id="pop-buttons-3">Contact</a>
-                        </li>
+                    <ul class="tech">
+                        <li class="use el">html & css</li>
+                        <li class="use el">JavaSript</li>
+                        <li class="use">ReactJS</li>
                     </ul>
-                    
                 </div>
 
-            </header>
-
-            <!--Setup the headline -->
-
-            <section  class="headline">
-                <h1>I’m Abdollah <br> Glad to see you!</h1>
-                <p class="whoAmI">
-                I’m a software developer! 
-                I can help you build a product , 
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded, 
-                don’t hestiate to contact me.
-                </p>
-    
-                <a href="#" class="contact-link">Let's Connect</a>
-    
-                <ul> 
-                    <li> <a href="https://twitter.com/abdollah_raafat" target="blank" class="icon">
-                    <ion-icon name="logo-twitter" class="large"></ion-icon></a></li>
-                    <li><a href="https://www.linkedin.com/in/abdollah-raafat-886059221/" target="blank" class="icon">
-                    <ion-icon name="logo-linkedin" class="large"></ion-icon></a></li>
-                    <li><a href="https://twitter.com/abdollah_raafat" target="blank" class="icon">
-                    <ion-icon name="logo-github" class="large"></ion-icon></a></li>
-                    <li><a href="#" target="blank" class="icon">
-                    <ion-icon name="logo-instagram" class="large"></ion-icon></a></li>
-                </ul> 
-                <div class="contact-icons"></div>
-            </section>
-        </section>
-        
-       
-
-        <!-- Works cards container-->
-        <section class="grid-container" id="work-id"> 
-            <article class="card">
-                <div class="pro-img">
-                    <img src="images/ex1.png" class="img" width="80%" height="auto">
-                </div>
-                
-                <div class="part2">
-                    <h2 class="project-name">Tonic</h2>
-                    
-                    <div class="info">
-                        <h3 class="details el">CANOPY</h3>
-                            <div class="dot el"></div>
-                        <p class="stack el">Back End Dev</p>
-                            <div class="dot el"></div>
-                        <p class="stack">2015</p>
-                    </div>
-        
-                    <p class="descrip">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        
-                    <div>
-                    <ul class="tech">
-                        <li class="use el">html</li>
-                        <li class="use el">css</li>
-                        <li class="use el">javaScript</li>
-                    </ul>  
-                    </div>
-        
-                    <button class="see-project popup-cards">
-                    See Project
-                    </button>
-                </div>    
-            </article>
-
-            <article class="card">
-                <div class="pro-img pro-img-2">
-                    <img src="images/ex2.png" class="img" width="80%" height="auto">
-                </div>
-                
-                <div class="part2">
-                    <h2 class="project-name">Multi-Post Stories</h2>
-                    
-                    <div class="info">
-                        <h3 class="details el">CANOPY</h3>
-                            <div class="dot el"></div>
-                        <p class="stack el">Back End Dev</p>
-                            <div class="dot el"></div>
-                        <p class="stack">2015</p>
-                    </div>
-        
-                    <p class="descrip">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        
-                    <div>
-                    <ul class="tech">
-                        <li class="use el">html</li>
-                        <li class="use el">css</li>
-                        <li class="use">javaScript</li>
-                    </ul>  
-                    </div>
-
-                    <button class="see-project popup-cards">
-                    See Project
-                    </button>
-                </div> 
-            </article>
-    
-
-            <article class="card">
-                <div class="pro-img">
-                    <img src="images/ex3.png" class="img" width="80%" height="auto">
-                </div>
-                
-                <div class="part2">
-                    <h2 class="project-name">Tonic</h2>
-                    
-                    <div class="info">
-                        <h3 class="details el">CANOPY</h3>
-                            <div class="dot el"></div>
-                        <p class="stack el">Back End Dev</p>
-                            <div class="dot el"></div>
-                        <p class="stack">2015</p>
-                </div>
-        
-                <p class="descrip">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        
-                <ul class="tech">
-                    <li class="use el">html</li>
-                    <li class="use el">css</li>
-                    <li class="use">javaScript</li>
-                </ul>  
-
-        
                 <button class="see-project popup-cards">
-                See Project
-                </button>
-                </div> 
-            </article>
-    
-            <article class="card">
-                <div class="pro-img pro-img-2">
-                    <img src="images/ex4.png" class="img" width="80%" height="auto">
-                </div>
-                
-                <div class="part2">
-                    <h2 class="project-name">Multi-Post Stories</h2>
-                    
-                    <div class="info">
-                        <h3 class="details el">CANOPY</h3>
-                            <div class="dot el"></div>
-                        <p class="stack el">Back End Dev</p>
-                            <div class="dot el"></div>
-                        <p class="stack">2015</p>
-                    </div>
-        
-                    <p class="descrip">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        
-                    <div>
-                    <ul class="tech">
-                        <li class="use el">html</li>
-                        <li class="use el">css</li>
-                        <li class="use">javaScript</li>
-                    </ul>  
-                    </div>
-        
-                    <button data-modal-target="#pop-up" class="see-project popup-cards">
                     See Project
-                    </button>
-                </div>
-            </article>
-        </section>
-        
-        <!-- Setup About-Me-->
+                </button>
+            </div>
+        </article>
 
-        <section class="about" id="about-id">
-            <article class="sec1">
-                <h2 class="me">About <br> Myself</h2>
-                <br>
-                <p class="here">
-                    I’m a software developer! 
-                    I can help you build a product , 
-                    feature or website Look through some of my work and experience! 
-                    If you like what you see and have a project you need coded, 
-                    don’t hestiate to contact me.
+        <article class="card">
+            <div class="pro-img pro-img-2">
+                <img src="images/ex2.png" class="img" width="80%" height="auto">
+            </div>
+
+            <div class="part2">
+                <h2 class="project-name">space-hub</h2>
+
+                <div class="info">
+                    <p class="stack el">Back End Dev</p>
+                    <div class="dot el"></div>
+                    <p class="stack">2022</p>
+                </div>
+
+                <p class="descrip">"Space Traveler's Hub" is A web application that provides commercial and scientific
+                    space travelling services, We are working with real live data from the SpaceX API. The application
+                    will allow users to book rockets and join selected space missions. The Space Travelers' Hub consists
+                    of Rockets, Missions, and the My Profile section.
                 </p>
-        
-                <a href="#" class="contact-link">Let's Connect</a>
-        
-                <div class="container">
-                    <ul>
-                    <li><a href="https://twitter.com/abdollah_raafat" target="blank" class="icon icon-1">
-                    <ion-icon name="logo-twitter" class="large"></ion-icon></a></li>
-                    <li><a href="https://www.linkedin.com/in/abdollah-raafat-886059221/" target="blank" class="icon">
-                    <ion-icon name="logo-linkedin" class="large"></ion-icon></a></li>
-                    <li><a href="https://twitter.com/abdollah_raafat" target="blank" class="icon">
-                    <ion-icon name="logo-github" class="large"></ion-icon></a></li>
-                    <li><a href="3" target="blank" class="icon">
-                    <ion-icon name="logo-instagram" class="large"></ion-icon></a></li>
+
+                <div>
+                    <ul class="tech">
+                        <li class="use el">html & css</li>
+                        <li class="use el">JavaSript</li>
+                        <li class="use">ReactJS</li>
                     </ul>
                 </div>
-                
+
+                <button class="see-project popup-cards">
+                    See Project
+                </button>
+            </div>
+        </article>
+
+
+        <article class="card">
+            <div class="pro-img">
+                <img src="images/ex3.png" class="img" width="80%" height="auto">
+            </div>
+
+            <div class="part2">
+                <h2 class="project-name">math-magicians</h2>
+
+                <div class="info">
+                    <p class="stack el">Back End Dev</p>
+                    <div class="dot el"></div>
+                    <p class="stack">2022</p>
+                </div>
+
+                <p class="descrip">"Math magicians" is a website for all fans of mathematics. It is a Single Page App
+                    (SPA) that allows users to: Make simple calculations, and Read a random math-related quote.
+                </p>
+
+                <ul class="tech">
+                    <li class="use el">html & css</li>
+                    <li class="use el">JavaSript</li>
+                    <li class="use">ReactJS</li>
+                </ul>
+
+
+                <button class="see-project popup-cards">
+                    See Project
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="pro-img pro-img-2">
+                <img src="images/ex4.png" class="img" width="80%" height="auto">
+            </div>
+
+            <div class="part2">
+                <h2 class="project-name">Leaderboard</h2>
+
+                <div class="info">
+                    <p class="stack el">Back End Dev</p>
+                    <div class="dot el"></div>
+                    <p class="stack">2022</p>
+                </div>
+
+                <p class="descrip">The leaderboard website displays scores submitted by different players. It also
+                    allows you to submit your score. All data is preserved thanks to the external Leaderboard API
+                    service.
+                </p>
+
+                <div>
+                    <ul class="tech">
+                        <li class="use el">html & css</li>
+                        <li class="use el">JavaSript</li>
+                        <li class="use">ReactJS</li>
+                    </ul>
+                </div>
+
+                <button data-modal-target="#pop-up" class="see-project popup-cards">
+                    See Project
+                </button>
+            </div>
+        </article>
+    </section>
+
+    <!-- Setup About-Me-->
+
+    <section class="about" id="about-id">
+        <article class="sec1">
+            <h2 class="me">About <br> Myself</h2>
+            <br>
+            <p class="here">
+                I’m a software developer!
+                I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+            </p>
+
+            <a href="#" class="contact-link">Let's Connect</a>
+
+            <div class="container">
+                <ul>
+                    <li><a href="https://twitter.com/abdollah_raafat" target="blank" class="icon icon-1">
+                            <ion-icon name="logo-twitter" class="large"></ion-icon></a></li>
+                    <li><a href="https://www.linkedin.com/in/abdollah-raafat-886059221/" target="blank" class="icon">
+                            <ion-icon name="logo-linkedin" class="large"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/abdollah_raafat" target="blank" class="icon">
+                            <ion-icon name="logo-github" class="large"></ion-icon></a></li>
+                    <li><a href="3" target="blank" class="icon">
+                            <ion-icon name="logo-instagram" class="large"></ion-icon></a></li>
+                </ul>
+            </div>
+            <a href="https://docs.google.com/document/d/1InqAQhEuf8kYL_3ozWp8gWzuTeF3MfgeZgNbuJhfGZE/edit?usp=share_link"
+                target="_blank">
                 <button class="see-resume">
                     Get my resume
                 </button>
-            </article>
-            <article class="sec2">
-                <div class="lang">
-                    <h3 class="one">Langguages</h3>
-                    <img src="images/Union-0.png" class="arrow-1" width="14px" height="8px">
+            </a>
+
+        </article>
+        <article class="sec2">
+            <div class="lang">
+                <h3 class="one">Langguages</h3>
+                <img src="images/Union-0.png" class="arrow-1" width="14px" height="8px">
+            </div>
+
+            <ul>
+                <div class="row">
+                    <li>
+                        <div class="js-icon">
+                            <img src="images/Ellipse 1.png" class="js-i">
+                            <p class="js-name">JavaSript</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="html-icon">
+                            <img src="images/Ellipse 1 (1).png" class="html-i">
+                            <p class="html-name">HTML</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="css-icon">
+                            <img src="images/Ellipse 1 (2).png" class="css-i">
+                            <p class="css-name">CSS</p>
+                        </div>
+                    </li>
                 </div>
-                
+
+            </ul>
+
+            <div class="Frameworks">
+                <h3 class="one">Frameworks</h3>
+                <img src="images/Union-1.png" class="arrow-1" width="6px" height="12px">
+            </div>
+
+            <img src="images/Separator.png" class="Separator" width="6px" height="12px">
+
+            <div class="skills">
+                <h3 class="one">Skills</h3>
+                <img src="images/Union-1.png" class="arrow-1" width="6px" height="12px">
+            </div>
+            <img src="images/Separator.png" class="Separator" width="6px" height="12px">
+            </div>
+        </article>
+    </section>
+
+    <!--Setup the contact form section -->
+
+    <footer class="footer-part" id="contact-id">
+        <section>
+            <h3 class="contact-me">Contact me</h3>
+
+            <p class="call-me">If you have an application you are interested in developing,
+                a feature that you need built or a project that needs coding.
+                I’d love to help with it </p>
+
+
+            <form action="https://formspree.io/f/xqkwvblb" class="contact-form" id="contact-form" method="post">
                 <ul>
-                    <div class="row">
-                        <li><div class="js-icon">
-                        <img src="images/Ellipse 1.png" class="js-i">
-                        <p class="js-name">JavaSript</p></div></li>
-                        
-                        <li><div class="html-icon">
-                        <img src="images/Ellipse 1 (1).png" class="html-i">
-                        <p class="html-name">HTML</p></div></li>
-                        
-                        <li> <div class="css-icon">
-                        <img src="images/Ellipse 1 (2).png" class="css-i">
-                        <p class="css-name">CSS</p></div></li>
-                    </div>
-                    
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="Name" class="nem" maxlength="30"
+                            required>
+                    </li>
+                    <li>
+                        <input type="email" id="mail" name="user_email" placeholder="E-mail" class="nem" required>
+                    </li>
+                    <li>
+                        <textarea id="msg" name="user_message" placeholder="Write your message here" class="nem"
+                            maxlength="500" required></textarea>
+                    </li>
+
+                    <li>
+
+                        <button class="last-button" type="submit">Get It Touch</button>
+                    </li>
+
                 </ul>
-        
-                <div class="Frameworks">
-                    <h3 class="one">Frameworks</h3>
-                    <img src="images/Union-1.png" class="arrow-1" width="6px" height="12px">
-                </div>
-        
-                <img src="images/Separator.png" class="Separator" width="6px" height="12px">
-        
-                <div class="skills">
-                    <h3 class="one">Skills</h3>
-                    <img src="images/Union-1.png" class="arrow-1" width="6px" height="12px">
-                </div>
-                <img src="images/Separator.png" class="Separator" width="6px" height="12px">
-                </div>
-            </article>
+            </form>
+            <span class="error"></span>
         </section>
-
-        <!--Setup the contact form section -->
-        
-        <footer class="footer-part" id="contact-id">
-            <section>
-                <h3 class="contact-me">Contact me</h3>
-
-                <p class="call-me">If you have an application you are interested in developing, 
-                    a feature that you need built or a project that needs coding. 
-                    I’d love to help with it </p>
-                
-
-                <form action="https://formspree.io/f/xqkwvblb" class="contact-form" id="contact-form" method="post">
-                    <ul>
-                        <li>
-                            <input type="text" id="name" name="user_name" placeholder="Name" class="nem" maxlength="30" required>
-                        </li>
-                        <li>
-                            <input type="email" id="mail" name="user_email" placeholder="E-mail" class="nem" required>
-                        </li>
-                        <li>
-                            <textarea id="msg" name="user_message" placeholder="Write your message here" class="nem" maxlength="500" required></textarea>
-                        </li>
-                        
-                        <li>
-                            
-                            <button class="last-button" type="submit">Get It Touch</button>
-                        </li>
-                        
-                    </ul>
-                </form>
-                <span class="error"></span>
-            </section>
-            <img src="images/shape.png" class="shape" height="5px" width="134px">
-        </footer>
+        <img src="images/shape.png" class="shape" height="5px" width="134px">
+    </footer>
 
     <!--Setup the Works section -->
 
-         <div id="pop-up">
+    <div id="pop-up">
 
-            <div id="modal-head">
-                <div id="name-close-part">
-                    <h2 class="modal-projectname">Tonic</h2>
-                    <a href="#" id="close-Icon-modal">&times;</a>  
-                </div>
-                
-                <div class="modal-info">
-                    <h3 class="modal-details canopy">CANOPY</h3>
-                    <div class="modal-info-2">
-                        <div class="dot dot-modal"></div>
-                        <p class="modal-details stack-modal">Back End Dev</p>
-                        <div class="dot dot-modal"></div>
-                        <p class="modal-details stack-modal">2015</p>
-                    </div>
-                       
-                
-                </div>
-                <img src="images/ex1.png" id="project-img-modal">
+        <div id="modal-head">
+            <div id="name-close-part">
+                <h2 class="modal-projectname">Tonic</h2>
+                <a href="#" id="close-Icon-modal">&times;</a>
             </div>
 
-            <div id="body-modal">
-
-                <div id="body-modal-one">
-                    <p class="modal-details-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essent
-                    </p> 
+            <div class="modal-info">
+                <h3 class="modal-details canopy">CANOPY</h3>
+                <div class="modal-info-2">
+                    <div class="dot dot-modal"></div>
+                    <p class="modal-details stack-modal">Back End Dev</p>
+                    <div class="dot dot-modal"></div>
+                    <p class="modal-details stack-modal">2015</p>
                 </div>
-                <div id="body-modal-two">
-                    <ul class="tech-modal">
-                        <li class="use el">html</li>
-                        <li class="use el">css</li>
-                        <li class="use el">javaScript</li>
-                        <li class="use el mob-hid">github</li>
-                        <li class="use el mob-hid">ruby</li>
-                        <li class="use el mob-hid">bootstrap</li>
-                    </ul>  
 
-                    <div id="btns-container">
-                        <button class="modal-btn live-link">See live  <img src="images/LiveIcon.png"> </button>
-                        <button class="modal-btn source-code">See Source  <img src="images/GithubVector.png"> </button>
-                    </div>
-                </div>
+
             </div>
-
+            <img src="images/ex1.png" id="project-img-modal">
         </div>
-        <div id="ovelay"></div>
+
+        <div id="body-modal">
+
+            <div id="body-modal-one">
+                <p class="modal-details-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it
+                    to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essent
+                </p>
+            </div>
+            <div id="body-modal-two">
+                <ul class="tech-modal">
+                    <li class="use el">html</li>
+                    <li class="use el">css</li>
+                    <li class="use el">javaScript</li>
+                    <li class="use el mob-hid">github</li>
+                    <li class="use el mob-hid">ruby</li>
+                    <li class="use el mob-hid">bootstrap</li>
+                </ul>
+
+                <div id="btns-container">
+                    <button class="modal-btn live-link">See live <img src="images/LiveIcon.png"> </button>
+                    <button class="modal-btn source-code">See Source <img src="images/GithubVector.png"> </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="ovelay"></div>
 
 
 
-        <!--Scripts-->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="main.js"></script>
+    <!--Scripts-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
 
-       
-    </body>
+
+</body>
+
 </html>
